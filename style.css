@@ -8,11 +8,23 @@
 
 body {
     margin: 0px;
+    font-family: "roboto", sans-serif;
 }
 
 header {
     font-family: 'Shrikhand', cursive;
     text-align: center;
-    box-shadow: 0 3px 2px lightgray;
+    box-shadow: 0 3px 5px lightgray;
     padding: 4px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    padding: 5px;
+    margin-top: 3px;
+    gap: 20px;
 }
