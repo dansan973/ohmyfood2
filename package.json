@@ -1,22 +1,23 @@
 {
-  "name": "ohmyfood1",
-  "version": "1.0.0",
-  "description": "P3 oc ohmyfood",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dansan973/ohmyfood1.git"
-  },
-  "author": "Daniel Sanchez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dansan973/ohmyfood1/issues"
-  },
-  "homepage": "https://github.com/dansan973/ohmyfood1#readme",
-  "devDependencies": {
-    "sass": "^1.49.9"
-  }
+    "name": "ohmyfood1",
+    "version": "1.0.0",
+    "description": "P3 oc ohmyfood",
+    "main": "index.js",
+    "scripts": {
+        "compiler": "sass --watch style.scss style.css"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dansan973/ohmyfood1.git"
+    },
+    "author": "Daniel Sanchez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dansan973/ohmyfood1/issues"
+    },
+    "homepage": "https://github.com/dansan973/ohmyfood1#readme",
+    "devDependencies": {
+        "sass": "^1.49.9"
+    }
 }
