@@ -4,7 +4,7 @@
     "description": "P3 oc ohmyfood",
     "main": "index.js",
     "scripts": {
-        "compiler": "sass --watch style.scss style.css"
+        "watch": "sass --watch style.scss style.css"
 
     },
     "repository": {
