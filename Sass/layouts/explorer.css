@@ -18,8 +18,8 @@
   color: white;
   font-size: 20px;
   padding: 10px 20px;
-  -webkit-box-shadow: 3px 3px 6px lightgray;
-          box-shadow: 3px 3px 6px lightgray;
+  -webkit-box-shadow: 2px 3px 6px lightgray;
+          box-shadow: 2px 3px 6px lightgray;
 }
 
 .explorer button:hover {
