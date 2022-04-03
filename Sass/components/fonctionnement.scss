@@ -1,18 +1,43 @@
+@import "../utils/hover.scss";
+@import"../utils/box-shadow.scss";
 .fonctionnement {
+    counter-reset: étapes;
     & ol {
         display: flex;
-        flex-wrap: wrap;
         gap: 20px;
         @media(max-width: 768px) {
             flex-direction: column;
         }
     }
     & li {
+        position: relative;
+        &::before {
+            content: counter(étapes);
+            counter-increment: étapes;
+            color: white;
+            background-color: #9356DC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 26px;
+            width: 26px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 5px;
+            left: -10px;
+        }
+        list-style-type: none;
         background-color: #f6f6f6;
         padding: 10px 20px;
         flex-grow: 1;
         border-radius: 10px;
         @include shadow1;
+        &:hover {
+            @include hover
+        }
+        & i.fa-solid {
+            margin-right: 10px;
+        }
     }
     & h2 {
         padding-left: 15px;
