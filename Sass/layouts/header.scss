@@ -3,4 +3,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 5px lightgray;
     margin-bottom: 0;
+    & h1 {
+        margin-bottom: 0;
+    }
 }

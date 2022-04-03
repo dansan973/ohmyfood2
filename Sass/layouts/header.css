@@ -5,4 +5,8 @@ header {
           box-shadow: 0 4px 5px lightgray;
   margin-bottom: 0;
 }
+
+header h1 {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=header.css.map */
