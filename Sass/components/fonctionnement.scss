@@ -1,5 +1,16 @@
 .fonctionnement {
-    &li {
+    & ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    & li {
         background-color: #f6f6f6;
+        padding: 10px 20px;
+        flex-grow: 1;
+        border-radius: 10px;
     }
 }

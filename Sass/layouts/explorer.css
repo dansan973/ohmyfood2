@@ -16,10 +16,10 @@
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356DC));
   background-image: linear-gradient(#ff79DA, #9356DC);
   color: white;
-  -webkit-box-shadow: 3px 3px 6px lightgray;
-          box-shadow: 3px 3px 6px lightgray;
   font-size: 20px;
   padding: 10px 20px;
+  -webkit-box-shadow: 3px 3px 6px lightgray;
+          box-shadow: 3px 3px 6px lightgray;
 }
 
 .explorer button:hover {

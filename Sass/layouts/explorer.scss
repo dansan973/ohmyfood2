@@ -1,3 +1,4 @@
+@import"../utils/box-shadow.scss";
 .explorer {
     text-align: center;
     padding-bottom: 30px;
@@ -12,9 +13,9 @@
         border-radius: 20px;
         background-image: linear-gradient(#ff79DA, #9356DC);
         color: white;
-        box-shadow: 3px 3px 6px lightgray;
         font-size: 20px;
         padding: 10px 20px;
+        @include shadow1;
     }
     & button:hover {
         opacity: 0.8;
