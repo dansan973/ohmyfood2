@@ -12,16 +12,12 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-main {
-  padding: 0 10px;
-}
-
 header {
   font-family: 'Shrikhand', cursive;
   text-align: center;
   -webkit-box-shadow: 0 4px 5px lightgray;
           box-shadow: 0 4px 5px lightgray;
-  padding: 4px;
+  margin-bottom: 0;
 }
 
 .location {
@@ -64,10 +60,10 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356DC));
   background-image: linear-gradient(#ff79DA, #9356DC);
   color: white;
-  -webkit-box-shadow: 3px 3px 6px lightgray;
-          box-shadow: 3px 3px 6px lightgray;
   font-size: 20px;
   padding: 10px 20px;
+  -webkit-box-shadow: 3px 3px 6px lightgray;
+          box-shadow: 3px 3px 6px lightgray;
 }
 
 .explorer button:hover {
@@ -99,5 +95,11 @@ header {
       -ms-flex-positive: 1;
           flex-grow: 1;
   border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 6px lightgray;
+          box-shadow: 3px 3px 6px lightgray;
+}
+
+.fonctionnement h2 {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

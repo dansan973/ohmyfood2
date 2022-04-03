@@ -12,5 +12,9 @@
         padding: 10px 20px;
         flex-grow: 1;
         border-radius: 10px;
+        @include shadow1;
+    }
+    & h2 {
+        padding-left: 15px;
     }
 }
