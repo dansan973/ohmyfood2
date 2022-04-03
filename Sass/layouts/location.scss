@@ -1,0 +1,14 @@
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(235, 231, 231);
+    padding: 5px;
+    margin-top: 3px;
+    gap: 20px;
+    font-size: 14px;
+    & i {
+        font-size: 15px;
+    }
+}

@@ -1,42 +1,4 @@
 @import"./sass/base.scss";
-header {
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 4px 5px lightgray;
-    padding: 4px;
-}
-
-.location {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(235, 231, 231);
-    padding: 5px;
-    margin-top: 3px;
-    gap: 20px;
-    font-size: 14px;
-}
-
-main {
-    background-color: rgb(243, 243, 243);
-}
-
-.explorer {
-    text-align: center;
-}
-
-.explorer button {
-    margin-top: 12px;
-    border: none;
-    border-radius: 20px;
-    background-image: linear-gradient(#ff79DA, #9356DC);
-    color: white;
-    box-shadow: 3px 3px 6px lightgray;
-    font-size: 20px;
-    padding: 10px 20px;
-}
-
-.explorer button:hover {
-    opacity: 0.8;
-}
+@import"./sass/layouts/header.scss";
+@import"./sass/layouts/location.scss";
+@import"./sass/layouts/explorer.scss";

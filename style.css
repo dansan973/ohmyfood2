@@ -3,7 +3,8 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -11,17 +12,28 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+main {
+  padding: 0 10px;
+}
+
 header {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   text-align: center;
-  box-shadow: 0 4px 5px lightgray;
+  -webkit-box-shadow: 0 4px 5px lightgray;
+          box-shadow: 0 4px 5px lightgray;
   padding: 4px;
 }
 
 .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background-color: #ebe7e7;
   padding: 5px;
@@ -30,21 +42,30 @@ header {
   font-size: 14px;
 }
 
-main {
-  background-color: #f3f3f3;
+.location i {
+  font-size: 15px;
 }
 
 .explorer {
   text-align: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  background-color: #f3f3f3;
+}
+
+.explorerh2 {
+  margin-top: 0;
 }
 
 .explorer button {
   margin-top: 12px;
   border: none;
   border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356DC));
   background-image: linear-gradient(#ff79DA, #9356DC);
   color: white;
-  box-shadow: 3px 3px 6px lightgray;
+  -webkit-box-shadow: 3px 3px 6px lightgray;
+          box-shadow: 3px 3px 6px lightgray;
   font-size: 20px;
   padding: 10px 20px;
 }
@@ -52,5 +73,4 @@ main {
 .explorer button:hover {
   opacity: 0.8;
 }
-
 /*# sourceMappingURL=style.css.map */
