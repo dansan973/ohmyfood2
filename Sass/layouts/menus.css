@@ -1,0 +1,23 @@
+.menus {
+  background-color: #f6f6f6;
+}
+
+.menus .menus_carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menus .carte {
+  border: 1px solid black;
+}
+
+.menus .carte .image {
+  background-image: src= "C:/Users/Cayenne/Desktop/ohmyfood1/images/Image1.jpg";
+  width: 350px;
+  height: 150px;
+}
+/*# sourceMappingURL=menus.css.map */
