@@ -161,7 +161,6 @@ header h1 {
 }
 
 .menus .carte {
-  border: 1px solid black;
   height: 60px;
   width: 100%;
   -webkit-box-flex: 1;
@@ -170,6 +169,10 @@ header h1 {
 }
 
 .menus .carte .image {
-  background-image: url("../../images/image1.jpg");
+  height: 120px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */
