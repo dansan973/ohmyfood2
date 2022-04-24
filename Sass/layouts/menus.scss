@@ -1,0 +1,22 @@
+.menus {
+    background-color: #f6f6f6;
+    .menus_carte {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .carte {
+        height: 60px;
+        width: 100%;
+        & .image {
+            height: 120px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px;
+            &.new {
+                top: 15px;
+                right: 15px;
+            }
+        }
+    }
+}

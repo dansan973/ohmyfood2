@@ -1,0 +1,26 @@
+.menus {
+  background-color: #f6f6f6;
+}
+
+.menus .menus_carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menus .carte {
+  height: 60px;
+  width: 100%;
+}
+
+.menus .carte .image {
+  height: 120px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px;
+}
+/*# sourceMappingURL=menus.css.map */
