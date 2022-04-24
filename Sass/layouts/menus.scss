@@ -8,12 +8,15 @@
     .carte {
         height: 60px;
         width: 100%;
-        flex-grow: 1;
         & .image {
             height: 120px;
             width: 100%;
             object-fit: cover;
             border-radius: 10px 10px;
+            &.new {
+                top: 15px;
+                right: 15px;
+            }
         }
     }
 }

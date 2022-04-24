@@ -1,5 +1,5 @@
 {
-    "name": "ohmyfood1",
+    "name": "ohmyfood2",
     "version": "1.0.0",
     "description": "P3 oc ohmyfood",
     "main": "index.js",
@@ -9,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dansan973/ohmyfood1.git"
+        "url": "git+https://github.com/dansan973/ohmyfood2.git"
     },
     "author": "Daniel Sanchez",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/dansan973/ohmyfood1/issues"
+        "url": "https://github.com/dansan973/ohmyfood2/issues"
     },
-    "homepage": "https://github.com/dansan973/ohmyfood1#readme",
+    "homepage": "https://github.com/dansan973/ohmyfood2#readme",
     "devDependencies": {
         "sass": "^1.49.9"
     }
