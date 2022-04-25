@@ -4,8 +4,7 @@
 *,
 ::before,
 ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,35 +17,26 @@ main {
 }
 
 header {
-  font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
   text-align: center;
-  -webkit-box-shadow: 0 4px 5px lightgray;
-          box-shadow: 0 4px 5px lightgray;
+  box-shadow: 0 4px 5px lightgray;
   margin-bottom: 0;
 }
-
 header h1 {
   margin-bottom: 0;
 }
 
 .location {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background-color: #ebe7e7;
+  background-color: rgb(235, 231, 231);
   padding: 5px;
   margin-top: 3px;
   gap: 20px;
   font-size: 14px;
 }
-
 .location i {
   font-size: 15px;
 }
@@ -55,26 +45,21 @@ header h1 {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 20px;
-  background-color: #f3f3f3;
+  background-color: rgb(243, 243, 243);
 }
-
 .explorerh2 {
   margin-top: 0;
 }
-
 .explorer button {
   margin-top: 12px;
   border: none;
   border-radius: 20px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356DC));
   background-image: linear-gradient(#ff79DA, #9356DC);
   color: white;
   font-size: 20px;
   padding: 10px 20px;
-  -webkit-box-shadow: 3px 3px 6px lightgray;
-          box-shadow: 3px 3px 6px lightgray;
+  box-shadow: 3px 3px 6px lightgray;
 }
-
 .explorer button:hover {
   opacity: 0.8;
 }
@@ -82,50 +67,32 @@ header h1 {
 .fonctionnement {
   counter-reset: étapes;
 }
-
 .fonctionnement ol {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
-
 @media (max-width: 768px) {
   .fonctionnement ol {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .fonctionnement li {
   position: relative;
   list-style-type: none;
   background-color: #f6f6f6;
   padding: 10px 20px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 6px lightgray;
-          box-shadow: 3px 3px 6px lightgray;
+  box-shadow: 3px 3px 6px lightgray;
 }
-
 .fonctionnement li::before {
   content: counter(étapes);
   counter-increment: étapes;
   color: white;
   background-color: #9356DC;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 26px;
   width: 26px;
   border-radius: 50%;
@@ -133,16 +100,12 @@ header h1 {
   bottom: 5px;
   left: -10px;
 }
-
 .fonctionnement li:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 .fonctionnement li i.fa-solid {
   margin-right: 10px;
 }
-
 .fonctionnement h2 {
   padding-left: 15px;
 }
@@ -150,24 +113,15 @@ header h1 {
 .menus {
   background-color: #f6f6f6;
 }
-
 .menus .menus_carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 20px;
 }
-
 .menus .carte {
   height: 60px;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
-
 .menus .carte .image {
   height: 120px;
   width: 100%;
@@ -175,4 +129,8 @@ header h1 {
      object-fit: cover;
   border-radius: 10px 10px;
 }
-/*# sourceMappingURL=style.css.map */
+.menus .carte .image.new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}/*# sourceMappingURL=style.css.map */
