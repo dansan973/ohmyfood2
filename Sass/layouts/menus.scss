@@ -1,23 +1,52 @@
-.menus {
-    background-color: #f6f6f6;
-    .menus_carte {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .carte {
-        height: 60px;
-        width: 100%;
-        & .image {
-            height: 120px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px 10px;
-            &.new {
-                position: absolute;
-                top: 15px;
-                right: 15px;
-            }
-        }
-    }
-}
+                        .menus {
+                            background-color: #f6f6f6;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            .menus_carte {
+                                display: flex;
+                                flex-wrap: wrap;
+                                position: relative;
+                                background-color: white;
+                                border-radius: 0 0 10px 10px;
+                            }
+                            .restaurant {
+                                display: flex;
+                                position: relative;
+                                flex-direction: column;
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+                            .carte {
+                                text-decoration: none;
+                                & .image {
+                                    height: 120px;
+                                    width: 100%;
+                                    object-fit: cover;
+                                    border-radius: 10px 10px 0 0;
+                                }
+                                & .new {
+                                    position: absolute;
+                                    top: 15px;
+                                    right: 15px;
+                                    background-color: #99e2d0;
+                                    color: #1b6150;
+                                    padding: 5px;
+                                    border-radius: 2px;
+                                }
+                                & .comment {
+                                    border-radius: 0 0 10px 10px;
+                                    background-color: white;
+                                    color: black;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                                & .texte {
+                                    border-radius: 0 0 10px 10px;
+                                    color: black;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                }
+                            }
+                        }

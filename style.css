@@ -12,10 +12,6 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-main {
-  padding: 0 60px;
-}
-
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -31,7 +27,7 @@ header h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgb(235, 231, 231);
+  background-color: #ebe7e7;
   padding: 5px;
   margin-top: 3px;
   gap: 20px;
@@ -45,7 +41,7 @@ header h1 {
   text-align: center;
   padding-bottom: 30px;
   padding-top: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: #f3f3f3;
 }
 .explorerh2 {
   margin-top: 0;
@@ -70,6 +66,8 @@ header h1 {
 .fonctionnement ol {
   display: flex;
   gap: 20px;
+  padding-right: 40px;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   .fonctionnement ol {
@@ -112,25 +110,55 @@ header h1 {
 
 .menus {
   background-color: #f6f6f6;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .menus .menus_carte {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+}
+.menus .restaurant {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
 }
 .menus .carte {
-  height: 60px;
-  width: 100%;
+  text-decoration: none;
 }
 .menus .carte .image {
   height: 120px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px 10px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
-.menus .carte .image.new {
+.menus .carte .new {
   position: absolute;
   top: 15px;
   right: 15px;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 5px;
+  border-radius: 2px;
+}
+.menus .carte .comment {
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menus .carte .texte {
+  border-radius: 0 0 10px 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
