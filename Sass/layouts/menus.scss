@@ -1,7 +1,8 @@
                 .menus {
-                    background-color: #f6f6f6;
+                    background-color: #f3f3f3;
                     padding-left: 20px;
                     padding-right: 20px;
+                    padding-bottom: 20px;
                     .menus_carte {
                         display: flex;
                         flex-wrap: wrap;
@@ -14,6 +15,9 @@
                             flex-direction: column;
                             width: 100%;
                             border-radius: 10px;
+                            & a.carte {
+                                height: 150px;
+                            }
                             & .comment {
                                 border-radius: 0 0 10px 10px;
                                 background-color: white;

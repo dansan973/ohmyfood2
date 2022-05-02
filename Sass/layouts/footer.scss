@@ -1,8 +1,13 @@
 footer {
     background-color: #353535;
     color: white;
+    padding: 10px;
     h2 {
         font-family: "shrikhand", "sans-serif";
         font-weight: 300;
+    }
+    & a.link {
+        color: white;
+        text-decoration: none;
     }
 }

@@ -109,9 +109,10 @@ header h1 {
 }
 
 .menus {
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
 }
 .menus .menus_carte {
   display: flex;
@@ -126,6 +127,9 @@ header h1 {
   flex-direction: column;
   width: 100%;
   border-radius: 10px;
+}
+.menus .menus_carte .restaurant a.carte {
+  height: 150px;
 }
 .menus .menus_carte .restaurant .comment {
   border-radius: 0 0 10px 10px;
@@ -178,10 +182,134 @@ header h1 {
 footer {
   background-color: #353535;
   color: white;
+  padding: 10px;
 }
 footer h2 {
   font-family: "shrikhand", "sans-serif";
   font-weight: 300;
+}
+footer a.link {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0 0;
+  margin-top: -40px;
+}
+.carte .menu-détaillé {
+  padding: 0 25px;
+}
+.carte .menu-détaillé h3 {
+  font-weight: lighter;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.carte .menu-détaillé p {
+  margin-top: 5px;
+}
+.carte .menu-détaillé hr {
+  color: #99e2d0;
+  margin-left: 0px;
+  width: 45px;
+}
+.carte .menu-détaillé a.card-plat {
+  background-color: white;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: lightgray 3px 3px 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+.carte .menu-détaillé a.card-plat .container-texte {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+.carte .menu-détaillé a.card-plat .container-texte h4 {
+  font-weight: 900;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.carte .menu-détaillé a.card-plat .texte-principal {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.carte .menu-détaillé a.card-plat .texte-principal p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.carte .menu-détaillé a.card-plat .texte-prix {
+  margin-left: auto;
+  font-weight: 900;
+  margin-right: 10px;
+}
+.carte .menu-détaillé a.card-plat .texte-prix h4 {
+  margin-top: 15px;
+}
+.carte .menu-détaillé a.card-plat .texte-select {
+  background-color: #99e2d0;
+  height: 100%;
+  border-radius: 0 12px 12px 0;
+  margin-right: -70px;
+  width: 70px;
+  transition: margin-right 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.carte .menu-détaillé a.card-plat .texte-select i {
+  color: white;
+  font-size: 25px;
+}
+.carte .menu-détaillé a.card-plat:hover .texte-select {
+  margin-right: 0;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.resto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.resto h2 {
+  font-family: "shrikhand", "sans-serif";
+}
+.resto .coeur_on {
+  background-image: linear-gradient(#ff79da, #9356cd);
+  color: transparent;
+  background-clip: text;
+  opacity: 0;
+  position: absolute;
+  right: 25px;
+  transition-duration: 1s;
+}
+.resto:hover .coeur_on {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
