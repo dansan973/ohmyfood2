@@ -205,23 +205,23 @@ img {
   border-radius: 30px 30px 0 0;
   margin-top: -40px;
 }
-.carte .menu-détaillé {
+.carte .menu-détaillé1 {
   padding: 0 25px;
 }
-.carte .menu-détaillé h3 {
+.carte .menu-détaillé1 h3 {
   font-weight: lighter;
   margin-bottom: 0px;
   margin-top: 5px;
 }
-.carte .menu-détaillé p {
+.carte .menu-détaillé1 p {
   margin-top: 5px;
 }
-.carte .menu-détaillé hr {
+.carte .menu-détaillé1 hr {
   color: #99e2d0;
   margin-left: 0px;
   width: 45px;
 }
-.carte .menu-détaillé a.card-plat {
+.carte .menu-détaillé1 a.card-plat {
   background-color: white;
   display: flex;
   border-radius: 12px;
@@ -229,13 +229,13 @@ img {
   width: 100%;
   margin: 10px 0;
 }
-.carte .menu-détaillé a.card-plat .container-texte {
+.carte .menu-détaillé1 a.card-plat .container-texte {
   display: flex;
   width: 100%;
   align-items: center;
   overflow: hidden;
 }
-.carte .menu-détaillé a.card-plat .container-texte h4 {
+.carte .menu-détaillé1 a.card-plat .container-texte h4 {
   font-weight: 900;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -243,26 +243,26 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.carte .menu-détaillé a.card-plat .texte-principal {
+.carte .menu-détaillé1 a.card-plat .texte-principal {
   padding: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.carte .menu-détaillé a.card-plat .texte-principal p {
+.carte .menu-détaillé1 a.card-plat .texte-principal p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.carte .menu-détaillé a.card-plat .texte-prix {
+.carte .menu-détaillé1 a.card-plat .texte-prix {
   margin-left: auto;
   font-weight: 900;
   margin-right: 10px;
 }
-.carte .menu-détaillé a.card-plat .texte-prix h4 {
+.carte .menu-détaillé1 a.card-plat .texte-prix h4 {
   margin-top: 15px;
 }
-.carte .menu-détaillé a.card-plat .texte-select {
+.carte .menu-détaillé1 a.card-plat .texte-select {
   background-color: #99e2d0;
   height: 100%;
   border-radius: 0 12px 12px 0;
@@ -274,11 +274,11 @@ img {
   justify-content: center;
   cursor: pointer;
 }
-.carte .menu-détaillé a.card-plat .texte-select i {
+.carte .menu-détaillé1 a.card-plat .texte-select i {
   color: white;
   font-size: 25px;
 }
-.carte .menu-détaillé a.card-plat:hover .texte-select {
+.carte .menu-détaillé1 a.card-plat:hover .texte-select {
   margin-right: 0;
 }
 @keyframes rotation {
@@ -310,6 +310,26 @@ img {
 }
 .resto:hover .coeur_on {
   opacity: 1;
+}
+
+.commande {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.commande .commandBtn {
+  padding: 10px 15px;
+  border-radius: 100px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  background-image: linear-gradient(to bottom, #ff79da, #9356cd);
+  box-shadow: 2px 2px 10px #686868;
+  cursor: pointer;
+}
+.commande .commandBtn:hover {
+  transform: scale(1.03);
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
