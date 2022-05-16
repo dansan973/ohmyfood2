@@ -20,6 +20,21 @@ header {
 }
 header h1 {
   margin-bottom: 0;
+  margin-top: 0;
+}
+header .resto-container {
+  padding: 20px;
+}
+header .resto-container a i {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 25px;
+  height: 25px;
+  width: 25px;
+  color: #000;
+  transform: translateY(50%);
+  font-size: 18px;
 }
 
 .location {
@@ -58,6 +73,41 @@ header h1 {
 }
 .explorer button:hover {
   opacity: 0.8;
+}
+
+.loader {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  background: white;
+  opacity: 0.8;
+  z-index: 1;
+  inset: 0;
+  animation: disappear 1s 2s;
+  animation-fill-mode: forwards;
+}
+.loader::after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-top: 6px solid #ff79DA;
+  border-bottom: 6px solid #9356DC;
+  border-right: 6px solid #99e2d0;
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .fonctionnement {
@@ -128,10 +178,7 @@ header h1 {
   width: 100%;
   border-radius: 10px;
 }
-.menus .menus_carte .restaurant a.carte {
-  height: 150px;
-}
-.menus .menus_carte .restaurant .comment {
+.menus .menus_carte .comment {
   border-radius: 0 0 10px 10px;
   background-color: white;
   color: black;
@@ -141,7 +188,7 @@ header h1 {
   padding-left: 25px;
   padding-right: 25px;
 }
-.menus .menus_carte .restaurant .comment .coeur_on {
+.menus .menus_carte .comment .coeur_on {
   background-image: linear-gradient(#ff79da, #9356cd);
   color: transparent;
   background-clip: text;
@@ -150,20 +197,22 @@ header h1 {
   right: 25px;
   transition-duration: 1s;
 }
-.menus .menus_carte .restaurant .comment:hover .coeur_on {
+.menus .menus_carte .comment:hover .coeur_on {
   opacity: 1;
 }
 
-.carte {
+.carte1 {
   text-decoration: none;
+  margin-top: 0;
 }
-.carte .image {
+.carte1 .image {
   height: 150px;
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  display: block;
 }
-.carte .new {
+.carte1 .new {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -172,11 +221,17 @@ header h1 {
   padding: 5px;
   border-radius: 2px;
 }
-.carte .texte {
+.carte1 .texte {
   border-radius: 0 0 10px 10px;
   color: black;
   display: flex;
   flex-direction: column;
+}
+.carte1 .texte h3 {
+  margin-bottom: 0;
+}
+.carte1 .texte p {
+  margin-top: 6px;
 }
 
 footer {
@@ -195,8 +250,20 @@ footer a.link {
 
 img {
   width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
 .carte {
   display: flex;
   flex-direction: column;
@@ -204,9 +271,15 @@ img {
   background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   margin-top: -40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte .menu-détaillé1 {
-  padding: 0 25px;
+  padding-left: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte .menu-détaillé1 h3 {
   font-weight: lighter;
@@ -222,18 +295,32 @@ img {
   width: 45px;
 }
 .carte .menu-détaillé1 a.card-plat {
+  animation: slide-up 1s ease-in-out forwards;
   background-color: white;
   display: flex;
   border-radius: 12px;
   box-shadow: lightgray 3px 3px 20px;
   width: 100%;
   margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .carte .menu-détaillé1 a.card-plat .container-texte {
   display: flex;
   width: 100%;
   align-items: center;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .carte .menu-détaillé1 a.card-plat .container-texte h4 {
   font-weight: 900;
@@ -281,11 +368,14 @@ img {
 .carte .menu-détaillé1 a.card-plat:hover .texte-select {
   margin-right: 0;
 }
+.carte .menu-détaillé1 a.card-plat:hover i {
+  animation: rotation 1s ease-in-out;
+}
 @keyframes rotation {
-  from {
+  0% {
     transform: rotate(-270deg);
   }
-  to {
+  100% {
     transform: rotate(0deg);
   }
 }

@@ -21,3 +21,38 @@
         opacity: 0.8;
     }
 }
+
+.loader {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    background: white;
+    opacity: 0.8;
+    z-index: 1;
+    inset: 0;
+    animation: disappear 1s 2s;
+    animation-fill-mode: forwards;
+    &::after {
+        content: "";
+        height: 50px;
+        width: 50px;
+        border-top: 6px solid #ff79DA;
+        border-bottom: 6px solid #9356DC;
+        border-right: 6px solid #99e2d0;
+        border-radius: 50%;
+        animation: spin 3s infinite linear;
+    }
+    @keyframes disappear {
+        0% {
+            transform: scale(1)
+        }
+        100% {
+            transform: scale(0);
+        }
+    }
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
