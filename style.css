@@ -98,10 +98,13 @@ header .resto-container a i {
 }
 @keyframes disappear {
   0% {
-    transform: scale(1);
+    opacity: 0.8;
+  }
+  99% {
+    opacity: 0;
   }
   100% {
-    transform: scale(0);
+    z-index: -1000;
   }
 }
 @keyframes spin {
@@ -263,7 +266,15 @@ img {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
+  .carte .menu-détaillé1 {
+    Width: 33%;
+  }
 }
+.menu {
+  padding-right: 25px;
+}
+
 .carte {
   display: flex;
   flex-direction: column;
