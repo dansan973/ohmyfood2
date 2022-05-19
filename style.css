@@ -94,7 +94,19 @@ header .resto-container a i {
   border-bottom: 6px solid #9356DC;
   border-right: 6px solid #99e2d0;
   border-radius: 50%;
-  animation: spin 3s infinite linear;
+  animation: spin 3s;
+  opacity: 0;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+    color: white;
+  }
 }
 @keyframes disappear {
   0% {
@@ -105,11 +117,6 @@ header .resto-container a i {
   }
   100% {
     z-index: -1000;
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
   }
 }
 
